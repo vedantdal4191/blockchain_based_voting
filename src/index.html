@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain Voting System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Election Voting DApp</h1>
+    <div id="content">
+      <h2>Candidates</h2>
+      <table id="candidatesTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Vote Count</th>
+          </tr>
+        </thead>
+        <tbody id="candidatesResults">
+          <!-- Candidate data will be inserted here -->
+        </tbody>
+      </table>
+
+      <hr />
+
+      <h2>Cast Your Vote</h2>
+      <form id="voteForm">
+        <select id="candidatesSelect">
+          <!-- Candidate options will be inserted here -->
+        </select>
+        <input type="submit" value="Vote" />
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
